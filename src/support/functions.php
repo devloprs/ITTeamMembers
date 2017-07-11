@@ -68,9 +68,11 @@ function shortcode_query()
                     $termsString .= $term->slug . ' '; //create a string that has all the slugs
                 } ?>
                 <div class="<?php echo $termsString; ?> col-sm-6 col-md-4 card isotope-item item">
-                    <?php if (has_post_thumbnail ()) {
-                        the_post_thumbnail ( 'large' );
-                    } ?>
+                    <?php if (has_post_thumbnail ()) : ?>
+                        <a href="<?php the_permalink (); ?>" title="<?php the_title_attribute (); ?>">
+                            <?php the_post_thumbnail (); ?>
+                        </a>
+                    <?php endif; ?>
                     <div class="ittm-title">
                         <B><?php the_title (); ?></B>
                     </div>
