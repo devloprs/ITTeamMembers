@@ -1,3 +1,9 @@
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
 .isotope-item {
     z-index: 2;
 }
@@ -40,12 +46,6 @@
     -ms-transition-duration: 0s;
     -o-transition-duration: 0s;
     transition-duration: 0s;
-}
-
-.grid:after {
-    content: '';
-    display: block;
-    clear: both;
 }
 
 /*!
@@ -2223,7 +2223,6 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
         justify-content: center;
         margin-bottom: 0;
     }
-
     .form-inline .form-group {
         display: flex;
         flex: 0 0 auto;
@@ -2231,26 +2230,21 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
         align-items: center;
         margin-bottom: 0;
     }
-
     .form-inline .form-control {
         display: inline-block;
         width: auto;
         vertical-align: middle;
     }
-
     .form-inline .form-control-static {
         display: inline-block;
     }
-
     .form-inline .input-group {
         width: auto;
     }
-
     .form-inline .form-control-label {
         margin-bottom: 0;
         vertical-align: middle;
     }
-
     .form-inline .form-check {
         display: flex;
         align-items: center;
@@ -2259,32 +2253,27 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
         margin-top: 0;
         margin-bottom: 0;
     }
-
     .form-inline .form-check-label {
         padding-left: 0;
     }
-
     .form-inline .form-check-input {
         position: relative;
         margin-top: 0;
         margin-right: 0.25rem;
         margin-left: 0;
     }
-
     .form-inline .custom-control {
         display: flex;
         align-items: center;
         justify-content: center;
         padding-left: 0;
     }
-
     .form-inline .custom-control-indicator {
         position: static;
         display: inline-block;
         margin-right: 0.25rem;
         vertical-align: text-bottom;
     }
-
     .form-inline .has-feedback .form-control-feedback {
         top: 0;
     }
@@ -3565,7 +3554,6 @@ tbody.collapse.show {
         flex-wrap: nowrap;
         align-items: center;
     }
-
     .navbar-toggleable .navbar-nav {
         flex-direction: row;
     }
@@ -3574,18 +3562,15 @@ tbody.collapse.show {
         padding-right: .5rem;
         padding-left: .5rem;
     }
-
     .navbar-toggleable > .container {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
     }
-
     .navbar-toggleable .navbar-collapse {
         display: flex !important;
         width: 100%;
     }
-
     .navbar-toggleable .navbar-toggler {
         display: none;
     }
@@ -3609,7 +3594,6 @@ tbody.collapse.show {
         flex-wrap: nowrap;
         align-items: center;
     }
-
     .navbar-toggleable-sm .navbar-nav {
         flex-direction: row;
     }
@@ -3618,18 +3602,15 @@ tbody.collapse.show {
         padding-right: .5rem;
         padding-left: .5rem;
     }
-
     .navbar-toggleable-sm > .container {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
     }
-
     .navbar-toggleable-sm .navbar-collapse {
         display: flex !important;
         width: 100%;
     }
-
     .navbar-toggleable-sm .navbar-toggler {
         display: none;
     }
@@ -3653,7 +3634,6 @@ tbody.collapse.show {
         flex-wrap: nowrap;
         align-items: center;
     }
-
     .navbar-toggleable-md .navbar-nav {
         flex-direction: row;
     }
@@ -3662,18 +3642,15 @@ tbody.collapse.show {
         padding-right: .5rem;
         padding-left: .5rem;
     }
-
     .navbar-toggleable-md > .container {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
     }
-
     .navbar-toggleable-md .navbar-collapse {
         display: flex !important;
         width: 100%;
     }
-
     .navbar-toggleable-md .navbar-toggler {
         display: none;
     }
@@ -3697,7 +3674,6 @@ tbody.collapse.show {
         flex-wrap: nowrap;
         align-items: center;
     }
-
     .navbar-toggleable-lg .navbar-nav {
         flex-direction: row;
     }
@@ -3706,18 +3682,15 @@ tbody.collapse.show {
         padding-right: .5rem;
         padding-left: .5rem;
     }
-
     .navbar-toggleable-lg > .container {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
     }
-
     .navbar-toggleable-lg .navbar-collapse {
         display: flex !important;
         width: 100%;
     }
-
     .navbar-toggleable-lg .navbar-toggler {
         display: none;
     }
@@ -4067,7 +4040,6 @@ tbody.collapse.show {
         display: flex;
         flex-flow: row wrap;
     }
-
     .card-deck .card {
         display: flex;
         flex: 1 0 0;
@@ -4088,7 +4060,6 @@ tbody.collapse.show {
         display: flex;
         flex-flow: row wrap;
     }
-
     .card-group .card {
         flex: 1 0 0;
     }
@@ -4139,7 +4110,6 @@ tbody.collapse.show {
         column-count: 3;
         column-gap: 1.25rem;
     }
-
     .card-columns .card {
         display: inline-block;
         width: 100%;

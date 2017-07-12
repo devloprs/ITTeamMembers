@@ -34,9 +34,9 @@ function shortcode_query()
 
 
     ?>
-    <div class="ittm">
+    <div class="ittm container">
         <ul id="filters">
-            <button type="button" class="ittm btn btn-secondary"><a href="" data-filter="*"
+            <button type="button" class="ittm btn btn-secondary"><a href="#" data-filter="*"
                                                                     class="selected">Everything</a></button>
             <?php
             $terms = get_terms ( 'department' ); // you can use any taxonomy
@@ -59,7 +59,7 @@ function shortcode_query()
         ?>
         <?php if ($the_query->have_posts ()) : ?>
 
-        <div id="isotope-list" class="grid">
+        <div id="isotope-list" class="grid row">
 
             <?php while ($the_query->have_posts ()) : $the_query->the_post ();
                 $termsArray = get_the_terms ( $post->ID, "department" );  //Get the terms for this particular item
@@ -67,7 +67,7 @@ function shortcode_query()
                 foreach ($termsArray as $term) { // for each term
                     $termsString .= $term->slug . ' '; //create a string that has all the slugs
                 } ?>
-                <div class="<?php echo $termsString; ?> col-sm-6 col-md-4 card isotope-item item">
+                <div class="<?php echo $termsString; ?> ittm col-sm-6 col-md-4 card isotope-item item">
                     <?php if (has_post_thumbnail ()) : ?>
                         <a href="<?php the_permalink (); ?>" title="<?php the_title_attribute (); ?>">
                             <?php the_post_thumbnail (); ?>

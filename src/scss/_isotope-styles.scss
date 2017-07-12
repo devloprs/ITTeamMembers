@@ -1,3 +1,13 @@
+.ittm, card {
+  width: 20em;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+
+}
 
 .isotope-item {
   z-index: 2;
@@ -44,9 +54,5 @@
   transition-duration: 0s;
 }
 
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
+
 
